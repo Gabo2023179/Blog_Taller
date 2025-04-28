@@ -1,9 +1,9 @@
 // src/routes/blog.routes.js
 import { Router } from 'express';
-import {listPosts,getPostById,createPost,updatePost,deletePost} from '../controllers/post.controller.js';
-import {listCommentsByPost,createComment, deleteComment} from '../controllers/comment.controller.js';
-import {createPostValidator,getPostValidator,updatePostValidator,deletePostValidator} from '../validators/post.validators.js';
-import {getCommentsValidator,createCommentValidator,deleteCommentValidator} from '../validators/comment.validators.js';
+import {listPosts,getPostById,createPost,updatePost,deletePost} from '../post/post.controller.js';
+import {listCommentsByPost,createComment, deleteComment} from '../comment/comment.controller.js';
+import {createPostValidator,getPostValidator,updatePostValidator,deletePostValidator} from '../middlewares/post.validators.js';
+import {getCommentsValidator,createCommentValidator,deleteCommentValidator} from '../middlewares/comment.validators.js';
 
 const router = Router();
 
