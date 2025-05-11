@@ -5,6 +5,7 @@ import {listCommentsByPost,createComment, updateComment, deleteComment} from '..
 import {createPostValidator,getPostValidator,updatePostValidator, deletePostValidator} from '../middlewares/post.validators.js';
 import {getCommentsValidator,createCommentValidator, updateCommentValidator, deleteCommentValidator} from '../middlewares/comment-validators.js';
 
+
 const router = Router();
 
 // Publicaciones
